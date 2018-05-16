@@ -1,0 +1,542 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background: rgb(247,248,248);
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+/*login部分*/
+.login{
+	width: 100%;
+	height: 30px;
+	background: rgb(247,249,248);
+	font-size:12px;
+	position: relative;
+	line-height: 30px; 
+}
+.login_left{
+	position: absolute;
+	left: 8%;
+}
+.login_left li{
+	list-style: none;
+	float: left;
+	margin-right:12px;
+}
+.login_left .span2{
+	color: rgb(0,136,66);
+}
+.login_left #city,#my_yg_btn,#phone_yg_btn{
+	background: url("../images/login_icon.png") no-repeat left top;
+	display: inline-block;
+	vertical-align: middle;
+	width: 8px;
+	height: 4px;
+	margin-left: 4px;
+	margin-top: -3px;
+}
+.login_right{
+	position: absolute;
+	left: 55%;
+}
+.login_right ul{
+	list-style: none;
+}
+.login_right ul li{
+	float: left;
+	margin-right: 20px;
+	height: 30px;
+}
+.login_right #my_yg{
+	background: url("../images/login_icon.png") no-repeat -40px 0;
+	width: 18px;
+	height: 18px;
+	margin-top:-2px;
+	vertical-align: middle; 
+	display: inline-block;
+}
+.login_right #my_yg,#phone_yg,#card_yg,#gift_yg{
+	margin-right: 5px;
+}
+.login_right #phone_yg{
+	background: url("../images/login_icon.png") no-repeat -64px 0;
+	width: 18px;
+	height:18px;
+	margin-top: -2px;
+	vertical-align: middle; 
+	display:inline-block;
+}
+.login_right #card_yg{
+	background: url("../images/login_icon.png") no-repeat -147px 0;
+	width:21px ;
+	height:16px;
+	display: inline-block;
+	margin-top:-2px; 
+	vertical-align: middle; 
+}
+.login_right #gift_yg{
+	background: url("../images/login_icon.png") no-repeat -86px 0;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-top: -2px;
+	vertical-align: middle; 
+}
+.login a{
+	text-decoration: none;
+	color: rgb(68,68,68);
+}
+
+/*header部分*/
+.header{
+    width: 100%;
+    height: 78px;
+    position:relative;
+    background: rgb(224,224,224);
+}
+.header img{
+	display: block;
+	position: absolute;
+	top:20%;
+	left:8%;
+}
+.header .search{
+    position: absolute;
+    left: 30%;
+    top:20%;
+}
+.header .search input{
+	width: 518px;
+	height:28px;
+	padding-left: 10px;
+	background: #fff;
+	border:1px solid rgb(0,136,66);
+	float: left;
+}
+.header .search button{
+	width: 81px;
+	height:30px;
+	background: rgb(0,136,66);
+	margin-left: -81px;
+	margin-top:0;
+	float: left;
+	border: 0;
+}
+.header .search a{
+    text-decoration: none;
+    color: rgb(114,114,114);
+    font-size: 12px;
+    margin-left: 5px;
+}
+.header .buycar{
+	width: 172px;
+	height: 42px;
+	line-height: 44px;
+	background: #fff;
+	border:1px solid rgb(0,136,66);
+	position: absolute;
+	left:80%;
+	top:20%;
+	font-size: 22px;
+	color:#008842;
+}
+.header .buycar .buycar_bg{
+	background: url("../images/login_icon.png") no-repeat -112px 0;
+	display: inline-block;
+	width: 28px;
+	height: 19px;
+	margin-top:10px;
+	margin-right:10px; 
+	margin-left:30%; 
+}
+.fixtop{
+	height: 46px;
+	background: rgba(224,224,224,0.3);
+	/*display: none;*/
+}
+#resizelogo{
+	height: 36px;
+	width: 104px;
+	top:8%;
+
+}
+.resizesearch{
+	top: 8%;
+}
+#buycar2{
+	top:8%;
+	width: 130px;
+	height: 34px;
+	left: 85%;
+}
+#burcar_bg{
+	margin-top:30px;
+}
+
+
+/*轮播图*/
+.banner{
+    position:relative;
+    /*width: 100%;*/
+    height: 500px;
+    background: #f00;
+    overflow: hidden;
+}
+.banner img{
+    /*width: 100%;*/
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left:-220px; 
+}
+.banner img:nth-child(1){
+	z-index: 1;
+}
+.banner p{
+    position: absolute;
+    bottom:3%;
+    z-index:999;
+    margin-left:45%
+}
+.banner p a{
+    display: inline-block;
+    background:#fff;
+    height:12px;
+    width:12px;
+    border-radius:100%;
+    margin-left:10px;
+}
+.banner .select{
+	width: 180px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	color: white;
+	font:none bold 14px "微软雅黑" #fff;
+	background: rgb(0,136,66);
+	position: absolute;
+	top:0;
+	left: 8%;
+	border:0;
+	font-size: 15px;
+	font-family: "微软雅黑";
+	position: relative;
+}
+/*.banner #select_index{
+	background: url("../images/login_icon.png") no-repeat left top;
+	display: inline-block;
+	vertical-align: middle;
+	width: 7px;
+	height: 4px;
+	margin-right: 4px;
+	margin-top: -3px;
+}*/
+.banner ul{
+	position: absolute;
+	top:38px;
+	left: 8%;
+	width: 180px;
+}
+.banner ul li{
+	list-style: none;
+	background: #fff;
+	line-height: 42px;
+	width: 180px;
+	height: 42px;
+	text-align: center;
+	font-size:14px;
+	background: rgb(244,251,253);
+}
+.banner ul li span:nth-child(1){
+	display: inline-block;
+	vertical-align: middle;
+	width: 19px;
+	height: 19px;
+	/*margin-left: 4px;*/
+	margin-top: -3px;
+	margin-left: -30px;
+	margin-right:20px; 
+}
+.banner #icon1{
+	background: url("../images/index-icon.png") no-repeat -3px -3px;
+
+}
+.banner #icon2{
+	background: url("../images/index-icon.png") no-repeat -27px -3px;
+}
+.banner #icon3{
+	background: url("../images/index-icon.png") no-repeat -51px -3px;
+}
+.banner #icon4{
+	background: url("../images/index-icon.png") no-repeat -73px -3px;
+}
+.banner #icon5{
+	background: url("../images/index-icon.png") no-repeat -98px -3px;
+}
+.banner #icon6{
+	background: url("../images/index-icon.png") no-repeat -122px -3px;
+}
+.banner #icon7{
+	background: url("../images/index-icon.png") no-repeat -145px -3px;
+}
+.banner #icon8{
+	background: url("../images/index-icon.png") no-repeat -170px -3px;
+}
+.banner #icon9{
+	background: url("../images/index-icon.png") no-repeat -196px -3px;
+}
+.banner #icon10{
+	background: url("../images/index-icon.png") no-repeat -219px -3px;
+}
+/*导航*/
+
+/*内容索引部分四大块*/
+.content_index{
+    margin-top:20px;
+    width:100%;
+}
+.content_index ul{
+    margin-left:8%;
+    list-style:none;
+    overflow: hidden;
+}
+.content_index ul li{
+    float:left;   /*margin的百分比相对于什么设置，元素的宽高相对于什么设置*/
+    height:261px;
+    background: #f00;
+    margin-right:13px;
+    position: relative;
+}
+.content_index ul li img{
+	  /*为什么图片设置290跟原网页不一样*/
+}
+.content_index ul li p{
+	position:absolute;
+    left:5%;
+    bottom:15%;
+    width:90%;
+    background:rgba(248,243,239,0.6);
+    text-align:center;
+    color:#999;
+    height:19.6%;
+    color:#575757;   /*p设置了定位后，里面的元素为什么会跑掉？*/
+}
+/*进口水果部分*/
+.foreign_fruit{
+	width: 100%;
+	height: 463px;
+	margin-top:20px; 
+}
+.fruit{
+	margin-left: 8%;
+	position: relative;
+	
+}
+.fruit #title_icon{
+	background: url('../images/title_icon.png') no-repeat 0 0;
+	width: 45px;
+	height: 32px;
+	vertical-align: middle;
+	margin-right:30px;
+	text-align: left;
+
+}
+.fruit p span:nth-child(1){
+	/*background: #ff0;*/
+	height: 32px;
+	display: inline-block;
+	line-height: 32px;
+
+}
+.fruit p span:nth-child(1) a{
+	/*background: #ff0;*/
+	height: 32px;
+	display: inline-block;
+	line-height: 32px;
+	position: absolute;
+	left:2px;
+	top:5px;
+	color: rgb(253,96,60);
+	font:bolder 20px "微软雅黑";
+	z-index: 10;
+
+}
+.fruit p span:nth-child(1) i{
+	font:bolder normal 20px "微软雅黑";
+	color:#fff;
+	
+}
+
+.fruit p span:nth-child(2){
+	text-align: right;
+	float: right;
+	margin-right: 8%;
+	line-height: 32px;
+}
+.fruit p span:nth-child(2) a{
+	display: inline-block;
+	/*background: #ff0;*/
+	border-right: 1px solid #787878;
+	width: 80px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 14px;
+	color: #787878;
+
+}
+.fruit p span:nth-child(2) a:nth-child(3){
+	border-right: 0;
+}
+.left_fruit{
+	float: left;
+	height: 462px;
+}
+.right_fruit{
+	float: left;
+	margin-top: -3px;
+}
+.right_fruit img{
+	border: 1px solid #d5d5d5;
+	border-left:0; 
+}
+.upfruit{
+	margin-top:2px; 
+}
+.upfruit img:nth-child(1),.down_fruit img:nth-child(1){
+	border-left:1px solid #d5d5d5;
+} 
+.down_fruit{
+	margin-top:-5px; 
+}
+/*.right_fruit .upfruit{
+	float: left;
+}
+*/
+/*网站服务特色*/
+.service{
+	background: rgb(224,224,224);
+	margin-top: 52px;
+	width: 100%;
+	height: 72px;
+	padding-top: 30px;
+	/*background: blue;*/
+}
+.service ul{
+	height: 42px;
+	margin-left: 8%;
+}
+.service ul li{
+	list-style: none;
+	float: left;
+	height: 42px;
+	margin-left: 100px;
+}
+
+.service ul li span{
+	width: 42px;
+	height: 42px;
+	display: inline-block;
+	border-right: 1px solid rgb(168,168,168);
+	padding-right: 10px;
+	float: left;
+}
+.service ul li p{
+	float: left;
+	margin-left: 10px;
+}
+.service ul li b{
+	font-size: 16px;
+	color: rgb(0,127,77);
+}
+.service ul li i{
+	font:normal normal 12px "微软雅黑";
+	color: rgb(68,68,68);
+}
+.service ul li:nth-child(1) span{
+	background: url("../images/service.png") no-repeat 0 0;
+}
+.service ul li:nth-child(2) span{
+	background: url("../images/service.png") no-repeat 0 -44px;
+	height: 41px;
+}
+.service ul li:nth-child(3) span{
+	background: url("../images/service.png") no-repeat 0 -85px;
+}
+.service ul li:nth-child(4) span{
+	background: url("../images/service.png") no-repeat 0 -129px;
+}
+
+/*footer部分*/
+.footer{
+	width: 100%;
+	overflow: hidden;
+	zoom:1;
+	margin-bottom:50px; 
+}
+.footer .footer_wrap{
+	margin-left: 16%;
+	margin-top: 20px;
+}
+.footer .footer_wrap ul{
+	list-style: none;
+	color: rgb(87,85,86);
+	font-size: 12px;
+	border-left:1px dashed rgb(87,85,86);
+	margin-left: 4px;
+}
+.footer .footer_wrap ul li{
+	margin-top: 5px;
+	margin-left:20px; 
+}
+.footer div{
+	float: left;
+	margin-right:115px;
+}
+.footer p span{
+	height: 22px;
+	width: 23px;
+	display: inline-block;
+	margin-left:-8px;
+	margin-right: 10px; 
+	vertical-align: middle;
+}
+.newperson p span{
+	background: url("../images/footer.png") no-repeat -5px -1px;
+}
+.pay p span{
+	background: url("../images/footer.png") no-repeat -4px -24px;
+}
+.sendaction p span{
+	background: url("../images/footer.png") no-repeat -4px -47px;
+
+}
+.afterbuy p span{
+	background: url("../images/footer.png") no-repeat -4px -69px;
+	height: 24px;
+}
+.aboutus p span{
+	background: url("../images/footer.png") no-repeat -4px -93px;
+}
+.phone,.tip,.license{
+	width: 100%;
+	text-align: center;
+}
+.phone{
+	color: rgb(0,136,66);
+	font-size: 15px;
+	margin-bottom:20px; 
+}
+.tip{
+	color: rgb(113,113,113);
+	font-size: 13px;
+}
+.license{
+	color: rgb(113,113,113);
+	font-size:8px;
+	margin-bottom:50px; 
+}
