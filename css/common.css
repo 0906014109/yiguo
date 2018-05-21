@@ -1,0 +1,155 @@
+/*login部分*/
+.login{
+	width: 100%;
+	height: 30px;
+	background: rgb(247,249,248);
+	font-size:12px;
+	position: relative;
+	line-height: 30px; 
+}
+.login_left{
+	position: absolute;
+	left: 8%;
+}
+.login_left li{
+	list-style: none;
+	float: left;
+	margin-right:12px;
+}
+.login_left .span2{
+	color: rgb(0,136,66);
+}
+.login_left #city,#my_yg_btn,#phone_yg_btn{
+	background: url("../images/login_icon.png") no-repeat left top;
+	display: inline-block;
+	vertical-align: middle;
+	width: 8px;
+	height: 4px;
+	margin-left: 4px;
+	margin-top: -3px;
+}
+.login_right{
+	position: absolute;
+	left: 55%;
+}
+.login_right ul{
+	list-style: none;
+}
+.login_right ul li{
+	float: left;
+	margin-right: 20px;
+	height: 30px;
+}
+.login_right #my_yg{
+	background: url("../images/login_icon.png") no-repeat -40px 0;
+	width: 18px;
+	height: 18px;
+	margin-top:-2px;
+	vertical-align: middle; 
+	display: inline-block;
+}
+.login_right #my_yg,#phone_yg,#card_yg,#gift_yg{
+	margin-right: 5px;
+}
+.login_right #phone_yg{
+	background: url("../images/login_icon.png") no-repeat -64px 0;
+	width: 18px;
+	height:18px;
+	margin-top: -2px;
+	vertical-align: middle; 
+	display:inline-block;
+}
+.login_right #card_yg{
+	background: url("../images/login_icon.png") no-repeat -147px 0;
+	width:21px ;
+	height:16px;
+	display: inline-block;
+	margin-top:-2px; 
+	vertical-align: middle; 
+}
+.login_right #gift_yg{
+	background: url("../images/login_icon.png") no-repeat -86px 0;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-top: -2px;
+	vertical-align: middle; 
+}
+.login a{
+	text-decoration: none;
+	color: rgb(68,68,68);
+}
+
+
+
+
+
+/*footer部分*/
+.footer{
+	width: 100%;
+	overflow: hidden;
+	zoom:1;
+	margin-bottom:50px; 
+}
+.footer .footer_wrap{
+	margin-left: 16%;
+	margin-top: 20px;
+}
+.footer .footer_wrap ul{
+	list-style: none;
+	color: rgb(87,85,86);
+	font-size: 12px;
+	border-left:1px dashed rgb(87,85,86);
+	margin-left: 4px;
+}
+.footer .footer_wrap ul li{
+	margin-top: 5px;
+	margin-left:20px; 
+}
+.footer div{
+	float: left;
+	margin-right:115px;
+}
+.footer p span{
+	height: 22px;
+	width: 23px;
+	display: inline-block;
+	margin-left:-8px;
+	margin-right: 10px; 
+	vertical-align: middle;
+}
+.newperson p span{
+	background: url("../images/footer.png") no-repeat -5px -1px;
+}
+.pay p span{
+	background: url("../images/footer.png") no-repeat -4px -24px;
+}
+.sendaction p span{
+	background: url("../images/footer.png") no-repeat -4px -47px;
+
+}
+.afterbuy p span{
+	background: url("../images/footer.png") no-repeat -4px -69px;
+	height: 24px;
+}
+.aboutus p span{
+	background: url("../images/footer.png") no-repeat -4px -93px;
+}
+.phone,.tip,.license{
+	width: 100%;
+	text-align: center;
+}
+.phone{
+	color: rgb(0,136,66);
+	font-size: 15px;
+	margin-bottom:20px; 
+}
+.tip{
+	color: rgb(113,113,113);
+	font-size: 13px;
+}
+.license{
+	color: rgb(113,113,113);
+	font-size:8px;
+	margin-bottom:50px; 
+}

@@ -2,39 +2,52 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>易果网登录</title>
+        <title>购物车详情页</title>
+        <link rel="stylesheet" type="text/css" href="../css/buycar.css">
         <link rel="stylesheet" type="text/css" href="../css/common.css">
-        <link rel="stylesheet" type="text/css" href="../css/login.css">
         <style>
             
         </style>
     </head>
     <body>
-        <!--search部分-->
-        <div class="header">
-            <img src="../images/logo.png">
-            <b>登录</b>
-        </div>
-
-        <!--登录主题内容部分-->
-        <div class="login_content">
-            <div id="login">
-                <img src="http://img06.yiguoimg.com/e/others/170505/9288707397067429.jpg">
-                <form>
-                    <span class="welcome">欢迎登录</span><span class="index_register">还没有账户？<a href="register.html">立即注册</a></span>
-                    <input type="text" id="usr" placeholder="邮箱/账号/已验证手机">
-                    <input type="password" id="pwd" placeholder="密码">
-                    <input type="text" id="code" placeholder="验证码">
-                    <p>
-                        <input type="checkbox" id="self">自动登录
-                        <a class="forget" href="#">忘记登录密码</a>
-                    </p>
-                    <button>登&nbsp;&nbsp;录</button><!--用button的话记得清除button的默认事件-->
-                    <a href="#" class="other">第三方登录</a>
-                    <div class="icons"><sapn id="qq"></sapn><span id="weibo"></span><span id="elife"></span></div>
-                </form>
+       <!--login部分-->
+        <div class="login">
+            <ul class="login_left">
+                <li><span>欢迎光临易果生鲜</span></li>
+                <li class="span2"><span>配送至:</span></li>
+                <li class="span2">
+                    <span>上海</span>
+                    <span id="city"></span>
+                </li>
+            </ul>
+            <div class="login_right">
+                <ul>
+                    <li><a href="login.html">[登录]</a></li>
+                    <li><a href="html/register.html">[注册]</a></li>
+                    <li><span id="my_yg"></span><span>我的易果</span><span id="my_yg_btn"></span></li>
+                    <li><span id="phone_yg"></span><span>手机易果</span><span id="phone_yg_btn"></span></li>
+                    <li><span id="card_yg"></span><a href="#">储值卡</a></li>
+                    <li><span id="gift_yg"></span><a href="#">礼品兑换券入口</a></li>
+                </ul>
             </div>
         </div>
+        
+        <div class="header">
+            <img src="../images/logo.png">
+            <div class="line">
+                <span id="one"></span><span id="two"></span><span id="three"></span>
+            </div>
+        </div>
+
+
+        <!--购物车部分-->
+        <div class="buycar">
+            <div class="car_content">
+                <p>购物车是空的，去买点东西吧!&nbsp;&nbsp;&nbsp;&nbsp;<a href="../index.html">继续逛逛>></a></p>
+                <img src="../images/none-bg.jpg">
+            </div>
+        </div>
+
 
         <!--footer部分-->
         <div class="footer">
@@ -94,9 +107,16 @@
         <p class="license">沪ICP备09008015号 Copyright © 2005-2018 上海易果电子商务有限公司版权所有</p>
         
 
-    	
+
+
+
+
+
+
+
         <script src="../libs/jquery-3.3.1.js"></script>
-        <script src="../script/login.js"></script>
+        
+        <script src="../libs/common.js"></script>
         
             
 

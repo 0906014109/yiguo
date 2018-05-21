@@ -1,6 +1,7 @@
 *{
 	margin:0;
 	padding:0;
+	font-family: "微软雅黑";
 }
 body{
 	background: rgb(247,248,248);
@@ -8,87 +9,6 @@ body{
 a{
 	text-decoration: none;
 	color: black;
-}
-/*login部分*/
-.login{
-	width: 100%;
-	height: 30px;
-	background: rgb(247,249,248);
-	font-size:12px;
-	position: relative;
-	line-height: 30px; 
-}
-.login_left{
-	position: absolute;
-	left: 8%;
-}
-.login_left li{
-	list-style: none;
-	float: left;
-	margin-right:12px;
-}
-.login_left .span2{
-	color: rgb(0,136,66);
-}
-.login_left #city,#my_yg_btn,#phone_yg_btn{
-	background: url("../images/login_icon.png") no-repeat left top;
-	display: inline-block;
-	vertical-align: middle;
-	width: 8px;
-	height: 4px;
-	margin-left: 4px;
-	margin-top: -3px;
-}
-.login_right{
-	position: absolute;
-	left: 55%;
-}
-.login_right ul{
-	list-style: none;
-}
-.login_right ul li{
-	float: left;
-	margin-right: 20px;
-	height: 30px;
-}
-.login_right #my_yg{
-	background: url("../images/login_icon.png") no-repeat -40px 0;
-	width: 18px;
-	height: 18px;
-	margin-top:-2px;
-	vertical-align: middle; 
-	display: inline-block;
-}
-.login_right #my_yg,#phone_yg,#card_yg,#gift_yg{
-	margin-right: 5px;
-}
-.login_right #phone_yg{
-	background: url("../images/login_icon.png") no-repeat -64px 0;
-	width: 18px;
-	height:18px;
-	margin-top: -2px;
-	vertical-align: middle; 
-	display:inline-block;
-}
-.login_right #card_yg{
-	background: url("../images/login_icon.png") no-repeat -147px 0;
-	width:21px ;
-	height:16px;
-	display: inline-block;
-	margin-top:-2px; 
-	vertical-align: middle; 
-}
-.login_right #gift_yg{
-	background: url("../images/login_icon.png") no-repeat -86px 0;
-	display: inline-block;
-	width: 18px;
-	height: 18px;
-	margin-top: -2px;
-	vertical-align: middle; 
-}
-.login a{
-	text-decoration: none;
-	color: rgb(68,68,68);
 }
 
 /*header部分*/
@@ -113,9 +33,12 @@ a{
 	width: 518px;
 	height:28px;
 	padding-left: 10px;
-	background: #fff;
+	background: rgb(224,224,224);
 	border:1px solid rgb(0,136,66);
 	float: left;
+}
+.header .search #input2{
+	background: rgba(224,224,224,0.6);
 }
 .header .search button{
 	width: 81px;
@@ -155,8 +78,9 @@ a{
 }
 .fixtop{
 	height: 46px;
-	background: rgba(224,224,224,0.3);
-	/*display: none;*/
+	background: rgba(224,224,224,0.8);
+	z-index: 100;
+	display: none;
 }
 #resizelogo{
 	height: 36px;
@@ -172,11 +96,11 @@ a{
 	width: 130px;
 	height: 34px;
 	left: 85%;
+	line-height: 36px;
 }
 #burcar_bg{
 	margin-top:30px;
 }
-
 
 /*轮播图*/
 .banner{
@@ -193,23 +117,46 @@ a{
     left: 0;
     top: 0;
     margin-left:-220px; 
+    overflow: hidden;
 }
 .banner img:nth-child(1){
 	z-index: 1;
 }
-.banner p{
+.banner .p{
     position: absolute;
     bottom:3%;
     z-index:999;
-    margin-left:45%
+    margin-left:42%;
 }
-.banner p a{
+.banner .p a{
     display: inline-block;
     background:#fff;
     height:12px;
     width:12px;
     border-radius:100%;
     margin-left:10px;
+}
+.banner .btn #prev{
+	background: url("../images/prev_next.png") no-repeat left top;
+	width: 40px;
+	height: 100px;
+	opacity: 0.5;
+	filter:alpha(opacity=50);
+	position: absolute;
+	left: 0;
+	top:200px;
+	z-index: 200;
+}
+.banner .btn #next{
+	background: url("../images/prev_next.png") no-repeat -50px top;
+	width: 40px;
+	height: 100px;
+	opacity: 0.5;
+	filter:alpha(opacity=50);
+	position: absolute;
+	right: 0;
+	top:200px;
+	z-index: 200;
 }
 .banner .select{
 	width: 180px;
@@ -226,21 +173,14 @@ a{
 	font-size: 15px;
 	font-family: "微软雅黑";
 	position: relative;
+	z-index: 3;
 }
-/*.banner #select_index{
-	background: url("../images/login_icon.png") no-repeat left top;
-	display: inline-block;
-	vertical-align: middle;
-	width: 7px;
-	height: 4px;
-	margin-right: 4px;
-	margin-top: -3px;
-}*/
 .banner ul{
 	position: absolute;
 	top:38px;
 	left: 8%;
 	width: 180px;
+	z-index: 3;
 }
 .banner ul li{
 	list-style: none;
@@ -250,7 +190,7 @@ a{
 	height: 42px;
 	text-align: center;
 	font-size:14px;
-	background: rgb(244,251,253);
+	background: rgba(244,251,253,0.8);
 }
 .banner ul li span:nth-child(1){
 	display: inline-block;
@@ -293,6 +233,21 @@ a{
 .banner #icon10{
 	background: url("../images/index-icon.png") no-repeat -219px -3px;
 }
+.banner .secnav{
+	position: absolute;
+	left: 294px;
+	top:0;
+	height: 350px;
+	width: 180px;
+	/*background: #fff;*/
+	border:1px solid #bbb;
+	z-index: 3;
+	background: rgba(244,251,253,0.8);
+	padding:30px 50px 100px 20px;
+	display: none;
+	/*opacity: 0.8;
+	filter:alpha(opacity=80);*/
+}
 /*导航*/
 
 /*内容索引部分四大块*/
@@ -318,67 +273,66 @@ a{
 .content_index ul li p{
 	position:absolute;
     left:5%;
-    bottom:15%;
+    bottom:5%;
     width:90%;
-    background:rgba(248,243,239,0.6);
+    background:rgba(248,243,239,0.8);
     text-align:center;
     color:#999;
     height:19.6%;
     color:#575757;   /*p设置了定位后，里面的元素为什么会跑掉？*/
+}
+.content_index ul li p b{
+	font-size: 20px;
+}
+.content_index ul li p i{
+	font-style: normal;
+	font-size: 14px;
 }
 /*进口水果部分*/
 .foreign_fruit{
 	width: 100%;
 	height: 463px;
 	margin-top:20px; 
+	margin-bottom: 20px;
 }
-.fruit{
+.wrap{
 	margin-left: 8%;
 	position: relative;
 	
 }
-.fruit #title_icon{
+.wrap #title_icon{
 	background: url('../images/title_icon.png') no-repeat 0 0;
 	width: 45px;
 	height: 32px;
 	vertical-align: middle;
-	margin-right:30px;
+	margin-left:5px;
 	text-align: left;
-
-}
-.fruit p span:nth-child(1){
-	/*background: #ff0;*/
-	height: 32px;
 	display: inline-block;
-	line-height: 32px;
-
+	line-height: 35px;
+	/*background: pink;*/
 }
-.fruit p span:nth-child(1) a{
-	/*background: #ff0;*/
-	height: 32px;
-	display: inline-block;
-	line-height: 32px;
-	position: absolute;
-	left:2px;
-	top:5px;
+.wrap #title_icon i{
+	font:bolder normal 18px "微软雅黑";
+	color:#fff;
+	margin-left: 5px;
+}
+#foreign{
+	margin-left: 20px;
+	color: rgb(253,96,60);
+	font:bolder normal 18px "微软雅黑";
+}
+.wrap #title_icon a{
 	color: rgb(253,96,60);
 	font:bolder 20px "微软雅黑";
 	z-index: 10;
-
 }
-.fruit p span:nth-child(1) i{
-	font:bolder normal 20px "微软雅黑";
-	color:#fff;
-	
-}
-
-.fruit p span:nth-child(2){
+.wrap #right_list{
 	text-align: right;
 	float: right;
 	margin-right: 8%;
 	line-height: 32px;
 }
-.fruit p span:nth-child(2) a{
+.wrap #right_list a{
 	display: inline-block;
 	/*background: #ff0;*/
 	border-right: 1px solid #787878;
@@ -389,31 +343,31 @@ a{
 	color: #787878;
 
 }
-.fruit p span:nth-child(2) a:nth-child(3){
+.wrap #right_list a:nth-child(3){
 	border-right: 0;
 }
-.left_fruit{
+.left{
 	float: left;
 	height: 462px;
 }
-.right_fruit{
+.right{
 	float: left;
 	margin-top: -3px;
 }
-.right_fruit img{
+.right img{
 	border: 1px solid #d5d5d5;
 	border-left:0; 
 }
-.upfruit{
+.up{
 	margin-top:2px; 
 }
-.upfruit img:nth-child(1),.down_fruit img:nth-child(1){
+.up img:nth-child(1),.down img:nth-child(1){
 	border-left:1px solid #d5d5d5;
 } 
-.down_fruit{
+.down{
 	margin-top:-5px; 
 }
-/*.right_fruit .upfruit{
+/*.right .up{
 	float: left;
 }
 */
@@ -471,72 +425,4 @@ a{
 	background: url("../images/service.png") no-repeat 0 -129px;
 }
 
-/*footer部分*/
-.footer{
-	width: 100%;
-	overflow: hidden;
-	zoom:1;
-	margin-bottom:50px; 
-}
-.footer .footer_wrap{
-	margin-left: 16%;
-	margin-top: 20px;
-}
-.footer .footer_wrap ul{
-	list-style: none;
-	color: rgb(87,85,86);
-	font-size: 12px;
-	border-left:1px dashed rgb(87,85,86);
-	margin-left: 4px;
-}
-.footer .footer_wrap ul li{
-	margin-top: 5px;
-	margin-left:20px; 
-}
-.footer div{
-	float: left;
-	margin-right:115px;
-}
-.footer p span{
-	height: 22px;
-	width: 23px;
-	display: inline-block;
-	margin-left:-8px;
-	margin-right: 10px; 
-	vertical-align: middle;
-}
-.newperson p span{
-	background: url("../images/footer.png") no-repeat -5px -1px;
-}
-.pay p span{
-	background: url("../images/footer.png") no-repeat -4px -24px;
-}
-.sendaction p span{
-	background: url("../images/footer.png") no-repeat -4px -47px;
 
-}
-.afterbuy p span{
-	background: url("../images/footer.png") no-repeat -4px -69px;
-	height: 24px;
-}
-.aboutus p span{
-	background: url("../images/footer.png") no-repeat -4px -93px;
-}
-.phone,.tip,.license{
-	width: 100%;
-	text-align: center;
-}
-.phone{
-	color: rgb(0,136,66);
-	font-size: 15px;
-	margin-bottom:20px; 
-}
-.tip{
-	color: rgb(113,113,113);
-	font-size: 13px;
-}
-.license{
-	color: rgb(113,113,113);
-	font-size:8px;
-	margin-bottom:50px; 
-}

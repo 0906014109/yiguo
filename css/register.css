@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding:0;
+	font-family: "微软雅黑";
+}
+body{
+	color: #444;
+	background: rgb(247,248,248);
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.header{
+    width: 100%;
+    height: 70px;
+    position:relative;
+    background: rgb(224,224,224);
+}
+.header img{
+	display: block;
+	position: absolute;
+	top:20%;
+	left:8%;
+}
+.header b{
+	color: rgb(0,136,66);
+	font:normal normal 28px "微软雅黑";
+	position: absolute;
+	left: 25%;
+	top:26%;
+}
+
+/*注册部分*/
+.register{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.register p{
+	text-align: right;
+	margin-right: 10px;
+	/*width: 100%;*/
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.register p a{
+	color: orange;
+	font-weight: bold;
+}
+.content{
+	border:1px solid #e3e6e0;
+	width: 1200px;
+	height: 600px;
+	background: #fff;
+}
+.content form{
+	margin-left: 150px;
+	margin-top: 30px;
+	float: left;
+	/*background: #0f0;*/
+}
+.imgcode{
+	float: left;
+	/*margin-right:80px; */
+	margin-top:7px; 
+}
+form div{
+	margin-top:30px;
+	/*background: #f00;*/
+}
+.content form div span:first-child{
+	text-align: right;
+	display: inline-block;
+	width: 100px;
+}
+.content form input{
+	height: 38px;
+	width: 306px;
+	border:1px solid #c1c1c1; 
+	padding-left: 10px;
+	margin-left: 20px;
+	color: 12px;
+}
+.content .first img{
+	margin-left:20px;
+	margin-top: 10px;
+}
+#code{
+	width: 163px;
+}
+#phone{
+	background: url("../images/user.png") no-repeat 290px -29px;
+}
+#phonecode,#setpwd,#truepwd{
+	background: url("../images/user.png") no-repeat 290px -70px;
+	/*background-position: right;*/
+}
+form p{
+	font-size: 14px;
+	color: #878787;
+	margin:20px auto; 
+
+}
+form #self{
+	height: 15px;
+	width: 15px;
+	vertical-align: middle;
+	line-height: 15px;
+	margin-top:0; 
+}
+form button{
+	width: 306px;
+	height: 50px;
+	background: #008842;
+	border:0;
+	margin-top: 15px;
+	color: #fff;
+	font-size: 20px;
+	line-height: 50px;
+	float: right;
+	margin-right:10px; 
+}
+.content #right{
+	/*background: #0f0;*/
+	width: 45%;
+	height:634px;
+	float: left;
+	position: relative;
+}
+.content #right img{
+	position: absolute;
+	top:0;
+	bottom:0;
+	left: 60px;
+	right: 0;
+	margin:auto;
+}
+.footer{
+	border-top:1px solid rgb(224,224,224); 
+	padding-top: 70px;
+}

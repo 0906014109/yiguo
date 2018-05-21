@@ -2,41 +2,42 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>易果网登录</title>
+        <title>易果网注册</title>
+        <link rel="stylesheet" type="text/css" href="../css/register.css">
         <link rel="stylesheet" type="text/css" href="../css/common.css">
-        <link rel="stylesheet" type="text/css" href="../css/login.css">
         <style>
             
         </style>
     </head>
     <body>
-        <!--search部分-->
+        <!--注册部分-->
         <div class="header">
             <img src="../images/logo.png">
-            <b>登录</b>
+            <b>注册</b>
         </div>
-
-        <!--登录主题内容部分-->
-        <div class="login_content">
-            <div id="login">
-                <img src="http://img06.yiguoimg.com/e/others/170505/9288707397067429.jpg">
+       
+        <div class="register">
+            <p>我已经注册，现在就<a href="login.html">登录</a></p>
+            <div class="content">
                 <form>
-                    <span class="welcome">欢迎登录</span><span class="index_register">还没有账户？<a href="register.html">立即注册</a></span>
-                    <input type="text" id="usr" placeholder="邮箱/账号/已验证手机">
-                    <input type="password" id="pwd" placeholder="密码">
-                    <input type="text" id="code" placeholder="验证码">
+                    <div class="first">
+                        <span>图形验证码</span><input type="text" id="code" placeholder="图形验证码"><img src="../images/verifycode.jpg"><span>换一张</span><b></b>
+                    </div>
+                    <div><span>手机号</span><input type="text" id="phone" placeholder="请输入您的手机号"><b></b></div>
+                    <div><span>手机验证码</span><input type="text" id="phonecode" placeholder="手机验证码"><b></b></div>
+                    <div><span>设置密码</span><input type="text" id="setpwd" placeholder="6-20位字母、符号或数字"><b></b></div>
+                    <div><span>确认密码</span><input type="text" id="truepwd" placeholder="再次输入密码"><b></b></div>
+                    <div><span>邀请码</span><input type="text" id="invitecode" placeholder="邀请码"><b></b></div>
                     <p>
-                        <input type="checkbox" id="self">自动登录
-                        <a class="forget" href="#">忘记登录密码</a>
+                        <input type="checkbox" id="self">我已经阅读并同意<a href="">易果服务协议</a>
                     </p>
-                    <button>登&nbsp;&nbsp;录</button><!--用button的话记得清除button的默认事件-->
-                    <a href="#" class="other">第三方登录</a>
-                    <div class="icons"><sapn id="qq"></sapn><span id="weibo"></span><span id="elife"></span></div>
+                    <button>立即注册</button><!--用button的话记得清除button的默认事件-->
                 </form>
+                <div id="right"><img src="../images/register.png"></div>
+                
             </div>
         </div>
 
-        <!--footer部分-->
         <div class="footer">
             <div class="footer_wrap">
                 <div class="newperson">
@@ -94,9 +95,16 @@
         <p class="license">沪ICP备09008015号 Copyright © 2005-2018 上海易果电子商务有限公司版权所有</p>
         
 
-    	
+
+
+
+
+
+
+
         <script src="../libs/jquery-3.3.1.js"></script>
-        <script src="../script/login.js"></script>
+        
+        <script src="../libs/common.js"></script>
         
             
 

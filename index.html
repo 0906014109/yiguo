@@ -2,8 +2,9 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>易果网</title>
+        <title>易果网首页</title>
         <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
         <style>
             
         </style>
@@ -21,8 +22,8 @@
             </ul>
             <div class="login_right">
                 <ul>
-                    <li><a href="https://login.yiguo.com/ub/login.aspx?url=http://www.yiguo.com/#">[登录]</a></li>
-                    <li><a href="https://login.yiguo.com/Register?url=http://www.yiguo.com/">[注册]</a></li>
+                    <li><a href="html/login.html" target="_blank">[登录]</a></li>
+                    <li><a href="html/register.html" target="_blank">[注册]</a></li>
                     <li><span id="my_yg"></span><span>我的易果</span><span id="my_yg_btn"></span></li>
                     <li><span id="phone_yg"></span><span>手机易果</span><span id="phone_yg_btn"></span></li>
                     <li><span id="card_yg"></span><a href="#">储值卡</a></li>
@@ -32,10 +33,10 @@
         </div>
 
         <!--search部分-->
-        <div class="header">
+        <div class="header" id="bigNav">
             <img id="logo" src="images/logo.png">
             <div class="search">
-                <input type="text" placeholder="输入商品名/编号/拼音">
+                <input type="text" id="input1">
                 <button>搜索</button>
                 <p>
                     <a href="#" style="color:rgb(0,136,66)">三文鱼</a>
@@ -47,13 +48,13 @@
                     <a href="#">新西兰苹果</a>
                 <p>
             </div>
-            <div class="buycar"><span class="buycar_bg"></span><span>0.0</span></div>
+            <div class="buycar" id="buycar1"><span class="buycar_bg"></span><span>0.0</span></div>
         </div>
         <!--吸顶效果-->
         <div class="header fixtop">
             <img id="resizelogo" src="images/logo.png">
             <div class="search resizesearch">
-                <input type="text" placeholder="输入商品名/编号/拼音">
+                <input type="text" id="input2">
                 <button>搜索</button>
                 <span>&nbsp;&nbsp;
                     <a href="#" style="color:rgb(0,136,66)">三文鱼</a>
@@ -77,7 +78,7 @@
     		<img src="http://img06.yiguoimg.com/d/others/180510/9288722824471722.jpg">
             <img src="http://img05.yiguoimg.com/d/others/180509/9288722738390185.jpg">
             <img src="http://img07.yiguoimg.com/d/others/180509/9288722767520937.jpg">
-    		<p>
+    		<p class="p">
     			<a href="#"></a>
     			<a href="#"></a>
     			<a href="#"></a>
@@ -92,17 +93,22 @@
                 <span></span>
             </div>
             <ul>
-                <li><span id="icon1"></span><span>进口水果</span></li>
-                <li><span id="icon2"></span>国产水果</li>
-                <li><span id="icon3"></span>精选肉类</li>
-                <li><span id="icon4"></span>禽类蛋品</li>
-                <li><span id="icon5"></span>即烹美食</li>
-                <li><span id="icon6"></span>海鲜水产</li>
-                <li><span id="icon7"></span>乳品糕点</li>
-                <li><span id="icon8"></span>新鲜蔬菜</li>
-                <li><span id="icon9"></span>方便速食</li>
-                <li><span id="icon10"></span>粮油杂货</li>
-            </ul>   
+                <li><span id="icon1"></span><span name-id="foreign_fruit">进口水果</span></li>
+                <li><span id="icon2"></span><span name-id="inland_fruit">国产水果</span></li>
+                <li><span id="icon3"></span><span name-id="meat">精选肉类</span></li>
+                <li><span id="icon4"></span><span name-id="eggs">禽类蛋品</span></li>
+                <li><span id="icon5"></span><span name-id="nowfood">即烹美食</span></li>
+                <li><span id="icon6"></span><span name-id="seafood">海鲜水产</span></li>
+                <li><span id="icon7"></span><span name-id="cake">乳品糕点</span></li>
+                <li><span id="icon8"></span><span name-id="vegetable">新鲜蔬菜</span></li>
+                <li><span id="icon9"></span><span name-id="fastfood">方便速食</span></li>
+                <li><span id="icon10"></span><span name-id="mix">粮油杂货</span></li>
+            </ul> 
+            <div class="secnav"></div>
+            <div class="btn">
+                <span id="prev"></span>
+                <span id="next"></span>
+            </div>  
     	</div>
     </div>
 
@@ -110,67 +116,68 @@
     	<div class="content_index">
     		<ul>
     			<li>
-		    		<!--//http://www.yiguo.com/activity/sale/3200-->
 		    		 <img src="http://img06.yiguoimg.com/e/others/160303/9288692687216739.jpg">
-		    		 <!-- <p><h2>新品专区</h2><h6>探访源头产地 臻选当令时鲜</h6></p> -->
+		    		 <p><b>新品专区</b><br><i>探访源头产地 臻选当令时鲜</i></p>
 		   		</li>
 		   		<li>
-					<!--//http://www.yiguo.com/activity/sale/3203-->
 		    		 <img src="http://img07.yiguoimg.com/e/others/160314/9288692888445038.jpg">
-		    		 <!-- <p><h2>优质生活</h2><h6>美食有态度，生活更有味</h6></p> -->
+		    		 <p><b>优质生活</b><br><i>美食有态度，生活更有味</i></p>
 		    	</li>
 		    	<li>
-					<!--//http://www.yiguo.com/products/01_channelhome.html-->
 		    		 <img src="http://img07.yiguoimg.com/d/others/180115/9288718007313455.jpg">
-		    		 <!-- <p><h2>水果专区</h2><h6>全球水果最新鲜速递</h6></p> -->
+		    		 <p><b>水果专区</b><br><i>全球水果最新鲜速递</i></p>
 		    	</li>
 		    	<li>
-					<!--//http://article.yiguo.com/-->
 		    		 <img src="http://img06.yiguoimg.com/e/others/170622/9288709403714262.jpg">
-		    		 <!-- <p><h2>菜谱专栏</h2><h6>大厨私房菜 餐桌新食尚</h6></p> -->
+		    		 <p><b>菜谱专栏</b><br><i>大厨私房菜 餐桌新食尚</i></p>
 		    	</li>
             </ul> 
         </div>
         <!--进口水果详情-->
         <div class="foreign_fruit">
-            <div class="fruit">
+           <!--  <div class="wrap">
                 <p>
-                    <span><span id="title_icon"><i>F2</i></span><a href="">进口水果</a></span>
-                    <span>
+                    <span id="title_icon"><i>F1</i></span><a href="#" id="foreign">进口水果</a>
+                    <span id="right_list">
                         <a href="#">进口苹果</a>
                         <a href="#">佳沛专区</a>
                         <a href="#">泰国鲜果</a>
                     </span>
                 </p>
-                <div class="left_fruit">
+                <div class="left">
                     <img src="http://img06.yiguoimg.com/e/others/170217/9288701136937553.jpg">
                 </div>
-                <div class="right_fruit">
-                    <div class="upfruit">
+                <div class="right">
+                    <div class="up">
                         <img src="http://img07.yiguoimg.com/d/others/180213/9288719443928141.jpg"><img src="http://img06.yiguoimg.com/d/others/180327/9288720830768251.jpg"><img src="http://img07.yiguoimg.com/d/others/171102/9288714534265698.jpg">
                     </div>
-                    <div class="down_fruit">
+                    <div class="down">
                           <img src="http://img05.yiguoimg.com/d/others/180313/9288720228852845.jpg"><img src="http://img05.yiguoimg.com/d/others/180309/9288720096601193.jpg"><img src="http://img05.yiguoimg.com/d/others/180327/9288720830801019.jpg">
                     </div>
                 </div>
-            </div> 
-        </div>              
-        <div class="inland_fruit">
-            <div class="inland_fruit_wrap"></div>
-        </div>
-        <div class="seafood">
-            <div class="seafood_wrap"></div>
-        </div>
+            </div>  -->
+        </div>  
 
-
+        <!--国产水果-->
+        <div class="inland_fruit"></div>
+        <!--海鲜水产-->
+        <div class="seafood"></div>
+        <!--精选肉类-->
         <div class="meat"></div><!--2-->
+        <!--禽类蛋品-->
         <div class="eggs"></div><!--2-->
+        <!--粮油杂货-->
         <div class="mix"></div><!--3-->
+        <!--乳品糕点-->
         <div class="cake"></div><!--2-->
+        <!--饮料酒水-->
         <div class="water"></div><!--3-->
+        <!--方便速食-->
         <div class="fastfood"></div><!--2-->
 
 
+        
+        <!--网站服务特色-->
         <div class="service">
             <ul>
                 <li><span></span><p><b>全球精选</b><br><i>一站式生鲜购物方案</i></p></li>
@@ -179,6 +186,8 @@
                 <li><span></span><p><b>天天低价</b><br><i>会员专属优惠购不停</i></p></li>
             </ul>
         </div>
+
+        <!--footer部分-->
         <div class="footer">
             <div class="footer_wrap">
                 <div class="newperson">
@@ -231,9 +240,14 @@
                 </div>
             </div>
         </div>
+
+        <!--声明部分-->
         <p class="phone" style="margin-top:30px;">客服热线 400-000-7788 企业采购或团购，请转2号键咨询周一至周日 9:00-21:00</p>
-            <p class="tip">所有图片均受著作权保护，未经许可任何单位与个人不得使用、复制、转载、摘编，违者必究法律责任。</p>
-            <p class="license">沪ICP备09008015号 Copyright © 2005-2018 上海易果电子商务有限公司版权所有</p>
+        <p class="tip">所有图片均受著作权保护，未经许可任何单位与个人不得使用、复制、转载、摘编，违者必究法律责任。</p>
+        <p class="license">沪ICP备09008015号 Copyright © 2005-2018 上海易果电子商务有限公司版权所有</p>
+        
+
+
         <script src="libs/jquery-3.3.1.js"></script>
         <script src="data/index_data.js"></script>
         <script src="libs/common.js"></script>
