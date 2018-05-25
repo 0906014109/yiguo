@@ -22,6 +22,7 @@ a{
 	position: absolute;
 	top:20%;
 	left:8%;
+	cursor: pointer;
 }
 .header b{
 	color: rgb(0,136,66);
@@ -39,7 +40,7 @@ a{
 }
 .register p{
 	text-align: right;
-	margin-right: 10px;
+	margin-right: 75px;
 	/*width: 100%;*/
 	font-size: 14px;
 	margin-bottom: 10px;
@@ -69,7 +70,7 @@ form div{
 	margin-top:30px;
 	/*background: #f00;*/
 }
-.content form div span:first-child{
+.content form div .location{
 	text-align: right;
 	display: inline-block;
 	width: 100px;
@@ -119,22 +120,48 @@ form button{
 	font-size: 20px;
 	line-height: 50px;
 	float: right;
-	margin-right:10px; 
+	margin-right:75px; 
 }
 .content #right{
 	/*background: #0f0;*/
-	width: 45%;
+	width: 43%;
 	height:634px;
 	float: left;
-	position: relative;
+	/*position: relative;*/
+	/*background: #f00;*/
 }
 .content #right img{
 	position: absolute;
-	top:0;
-	bottom:0;
-	left: 60px;
-	right: 0;
-	margin:auto;
+	top:285px;
+	/*bottom:0;
+	left: 60px;*/
+	left: 888px;
+}
+.warn span{
+	background: url("../images/bg_login.png") no-repeat -40px -200px;
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.success{
+	background: url("../images/bg_login.png") no-repeat 0 -200px;
+	width: 17px;
+	height: 17px;
+	/*display: none;*/
+	display: inline-block;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+.success1,.success2,.success3,.success4,.success5,.success6{
+	display: none;
+}
+#btn{
+	cursor: pointer;
+}
+.warn1,.warn2,.warn3,.warn4,.warn5,.warn6{
+	display: none;
+	margin-left: 10px;
 }
 .footer{
 	border-top:1px solid rgb(224,224,224); 

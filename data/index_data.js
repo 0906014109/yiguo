@@ -3,7 +3,7 @@ var json={
 						num:"F1",
 						title:"进口水果",
 						list:["奇异果","车厘子","李","牛油果","提子","苹果","梨","柑桔橙柚","山竹","香蕉","火龙果","椰子","芒果","凤梨","榴莲","热带水果","时令水果","原箱水果"],
-						listImg:"../yiguo/images/list1.png",
+						listImg:"http://img05.yiguoimg.com/e/others/150929/9570160763248445.png",
 						a:["进口苹果","佳沛专区","泰国风情"],
 						img:["http://img06.yiguoimg.com/e/others/170217/9288701136937553.jpg","http://img07.yiguoimg.com/d/others/180213/9288719443928141.jpg","http://img06.yiguoimg.com/d/others/180327/9288720830768251.jpg","http://img07.yiguoimg.com/d/others/171102/9288714534265698.jpg","http://img05.yiguoimg.com/d/others/180313/9288720228852845.jpg","http://img05.yiguoimg.com/d/others/180309/9288720096601193.jpg","http://img05.yiguoimg.com/d/others/180327/9288720830801019.jpg"]
 					  },
@@ -11,7 +11,7 @@ var json={
 						num:"F2",
 						title:"国产水果",
 						list:["苹果","梨","樱桃","柑桔橙柚","瓜","葡萄","桃","莓","芒果","凤梨","百香果","热带水果","时令水果","原箱水果"],
-						listImg:"../yiguo/images/list2.png",
+						listImg:"http://img05.yiguoimg.com/e/others/150929/9570160763379517.png",
 						a:["芒香四溢","南国风情","精选苹果"],
 						img:["http://img06.yiguoimg.com/d/others/171128/9288715745272700.jpg","http://img05.yiguoimg.com/d/others/180313/9288720230032493.jpg","http://img05.yiguoimg.com/d/others/180327/9288720831095931.jpg","http://img06.yiguoimg.com/e/others/170210/9288700985745994.jpg","http://img07.yiguoimg.com/d/others/180313/9288720234325101.jpg","http://img07.yiguoimg.com/d/others/180327/9288720834274427.jpg","http://img05.yiguoimg.com/d/others/180313/9288720230196333.jpg"]
 					  },
@@ -19,7 +19,7 @@ var json={
 						num:"F3",
 						title:"海鲜水产",
 						list:["鱼","三文鱼","虾","蟹","贝","活鲜","海产干货","特色海产"],
-						listImg:"../yiguo/images/list5.png",
+						listImg:"http://img05.yiguoimg.com/e/others/150929/9570160763576125.png",
 						a:["刺身专区","东海水产","海产干货"],
 						img:["http://img07.yiguoimg.com/d/others/180327/9288720836764795.jpg","http://img06.yiguoimg.com/e/others/170809/9288711286039305.jpg","http://img06.yiguoimg.com/e/others/161130/9288699026514302.jpg","http://img07.yiguoimg.com/e/others/170527/9288708394394299.jpg","http://img06.yiguoimg.com/d/others/180103/9288717445506083.jpg","http://img07.yiguoimg.com/e/others/161208/9288699281514888.jpg","http://img05.yiguoimg.com/d/others/170822/9288711929537302.jpg"]
 					  },
@@ -27,23 +27,25 @@ var json={
 						num:"F4",
 						title:"精选肉类",
 						list:["进口牛肉","国产牛肉","猪肉","羊肉","香肠","火腿/培根","肉制品","进口鹿肉"],
-						listImg:"../yiguo/images/list3.png",
+						listImg:"http://img05.yiguoimg.com/e/others/150929/9570160763445053.png",
 						a:["欧洲天然猪","澳洲牛肉","肉类制品"],
-						img:["http://img07.yiguoimg.com/d/others/170906/9288712415519526.jpg","http://img05.yiguoimg.com/e/others/170504/9288707378258596.jpg","http://img07.yiguoimg.com/d/others/170906/9288712415650598.jpg","http://img05.yiguoimg.com/d/others/180327/9288720845546619.jpg","http://img05.yiguoimg.com/d/others/170906/9288712415585062.jpg","http://img06.yiguoimg.com/e/others/161207/9288699249566087.jpg","http://img07.yiguoimg.com/d/others/180327/9288720847021179.jpg"]
+						img:["http://img07.yiguoimg.com/d/others/170906/9288712415519526.jpg","http://img05.yiguoimg.com/e/others/170504/9288707378258596.jpg","http://img07.yiguoimg.com/d/others/170906/9288712415650598.jpg","http://img05.yiguoimg.com/d/others/180327/9288720845546619.jpg","http://img05.yiguoimg.com/d/others/170906/9288712415585062.jpg","http://img06.yiguoimg.com/e/others/161207/9288699249566087.jpg","http://img07.yiguoimg.com/d/others/180327/9288720847021179.jpg"],
+						logo:["http://img05.yiguoimg.com/e/others/160420/9288693612060820.jpg","http://img05.yiguoimg.com/e/others/150929/9288685776248637.jpg","http://img07.yiguoimg.com/e/others/160329/9288693154226301.jpg","http://img06.yiguoimg.com/e/others/160617/9570169907257553.png"]
 					  },
 			eggs:{
 						num:"F5",
 						title:"禽类蛋品",
 						list:["鸡","鸭","鹅/鸽/特色禽类","蛋"],
-						listImg:"../yiguo/images/list4.png",
+						listImg:"http://img05.yiguoimg.com/e/others/150929/9570160763510589.png",
 						a:["原味蒸品","原汁煲汤","禽类分割品"],
-						img:["http://img07.yiguoimg.com/e/others/170401/9288706104468097.jpg","http://img07.yiguoimg.com/d/others/180327/9288720852329595.jpg","http://img07.yiguoimg.com/d/others/180328/9288720888767612.jpg","http://img05.yiguoimg.com/d/others/180327/9288720852984955.jpg","http://img05.yiguoimg.com/d/others/170904/9288712336188196.jpg","http://img07.yiguoimg.com/d/others/170904/9288712344249124.jpg","http://img06.yiguoimg.com/d/others/170906/9288712415748902.jpg"]
+						img:["http://img07.yiguoimg.com/e/others/170401/9288706104468097.jpg","http://img07.yiguoimg.com/d/others/180327/9288720852329595.jpg","http://img07.yiguoimg.com/d/others/180328/9288720888767612.jpg","http://img05.yiguoimg.com/d/others/180327/9288720852984955.jpg","http://img05.yiguoimg.com/d/others/170904/9288712336188196.jpg","http://img07.yiguoimg.com/d/others/170904/9288712344249124.jpg","http://img06.yiguoimg.com/d/others/170906/9288712415748902.jpg"],
+						logo:["http://img05.yiguoimg.com/e/others/150927/9288685535567675.jpg","http://img05.yiguoimg.com/e/others/150927/9288685535436603.jpg","http://img07.yiguoimg.com/e/others/151106/9288689588215654.jpg","http://img05.yiguoimg.com/e/others/151116/9288689776533360.jpg"]
 					  },
 			mix:{
 						num:"F6",
 						title:"粮油杂货",
 						list:["米","杂粮","面/面制品","油","调味料","干货","果干/零食"],
-						listImg:"../yiguo/images/list9.png",
+						listImg:"http://img05.yiguoimg.com/e/others/150929/9570160757940029.png",
 						a:["休闲零食","健康杂粮","进口食用油"],
 						img:["http://img07.yiguoimg.com/e/others/170317/9288705349755505.jpg","http://img07.yiguoimg.com/d/others/180117/9288718115054641.jpg","http://img05.yiguoimg.com/d/others/171127/9288715720074107.jpg","http://img07.yiguoimg.com/e/others/170515/9288707875676847.jpg","http://img07.yiguoimg.com/d/others/180511/9288722856715435.jpg"],
 						logo:["http://img06.yiguoimg.com/e/others/160613/9570169801515213.png","http://img06.yiguoimg.com/e/others/160518/9288694301040818.jpg","http://img05.yiguoimg.com/d/others/180330/9288721011385470.jpg","http://img05.yiguoimg.com/e/others/160222/9288692500406358.jpg"]
@@ -52,7 +54,7 @@ var json={
 						num:"F7",
 						title:"乳品糕点",
 						list:["奶酪","黄油/奶油","酸奶/乳酸饮料","牛奶","面包","蛋糕","甜点"],
-						listImg:"../yiguo/images/list6.png",
+						listImg:"http://img05.yiguoimg.com/e/others/150929/9570160763641661.png",
 						a:["味全乳品","精选蛋糕","美味面包"],
 						img:["http://img05.yiguoimg.com/d/others/180328/9288720869106812.jpg","http://img07.yiguoimg.com/d/others/180316/9288720384894064.jpg","http://img05.yiguoimg.com/d/others/180117/9288718115152945.jpg","http://img06.yiguoimg.com/d/others/180328/9288720888734844.jpg","http://img06.yiguoimg.com/d/others/180328/9288720870581372.jpg","http://img06.yiguoimg.com/d/others/180327/9288720846398587.jpg","http://img06.yiguoimg.com/d/others/171121/9288715439022965.jpg"],
 						logo:["http://img07.yiguoimg.com/e/others/151104/9288689523662692.jpg","http://img05.yiguoimg.com/e/others/170208/9288700927287880.jpg","http://img05.yiguoimg.com/e/others/160222/9288692501618774.jpg","http://img05.yiguoimg.com/e/others/160219/9288692473241683.jpg"]
@@ -61,7 +63,7 @@ var json={
 						num:"F8",
 						title:"饮料酒水",
 						list:["水","果汁/饮料","冲调饮品","葡萄酒/酒具","啤酒"],
-						listImg:"../yiguo/images/list10.png",
+						listImg:"http://img05.yiguoimg.com/e/others/150929/9570160763182909.png",
 						a:["饮用水","果汁","白葡萄酒"],
 						img:["http://img06.yiguoimg.com/d/others/180329/9288720956728445.jpg","http://img05.yiguoimg.com/e/others/170616/9288709184463568.jpg","http://img07.yiguoimg.com/e/others/170302/9288704727917154.jpg","http://img06.yiguoimg.com/d/others/180328/9288720872285308.jpg","http://img05.yiguoimg.com/e/others/161209/9288699318608265.jpg"],
 						logo:["http://img07.yiguoimg.com/e/others/170221/9288701232128597.jpg","http://img05.yiguoimg.com/e/others/150927/9288685536812859.jpg","http://img05.yiguoimg.com/e/others/150927/9288685536943931.jpg","http://img06.yiguoimg.com/e/others/160621/9288695009779925.jpg"]
@@ -71,7 +73,7 @@ var json={
 						num:"F9",
 						title:"方便速食",
 						list:["养生汤品","冷冻点心","西式主食","中式主食","火锅料","冷藏熟食","半成品菜","易盒家宴"],
-						listImg:"../yiguo/images/list8.png",
+						listImg:"http://img05.yiguoimg.com/e/others/150929/9570160763838269.png",
 						a:["港式面点","湾仔码头","龙凤"],
 						img:["http://img05.yiguoimg.com/d/others/180328/9288720872776828.jpg","http://img06.yiguoimg.com/d/others/171121/9288715437024117.jpg","http://img06.yiguoimg.com/d/others/171121/9288715437253493.jpg","http://img05.yiguoimg.com/d/others/180327/9288720845677691.jpg","http://img07.yiguoimg.com/d/others/171121/9288715437384565.jpg","http://img05.yiguoimg.com/d/others/180329/9288720949748861.jpg","http://img05.yiguoimg.com/d/others/171127/9288715720139643.jpg"],
 						logo:["http://img05.yiguoimg.com/e/others/151008/9288686653382472.jpg","http://img07.yiguoimg.com/e/others/151023/9570164236722007.png","http://img05.yiguoimg.com/e/others/151222/9288691261546390.jpg","http://img05.yiguoimg.com/e/others/150927/9288685537206075.jpg"]
@@ -79,11 +81,11 @@ var json={
 					  },
 			nowfood:{
 						list:["独家秘制","生猛海鲜","日韩料理","美味靓汤","经典主菜","中华美食","精致西餐","开胃小菜","东南亚风味","田园时蔬"],
-						listImg:""
+						listImg:"http://img05.yiguoimg.com/e/others/150929/9570160763903805.png"
 			 		 },
 			vegetable:{
 						list:["叶菜类","根茎类","茄果/瓜果类","花菜/豆类","菌菇","冷冻蔬菜","豆制品","葱蒜类","蔬菜组合"],
-						listImg:"../yiguo/images/list7.png"
+						listImg:"http://img05.yiguoimg.com/e/others/150930/9570161550040894.png"
 			 		  }
 
 		  }

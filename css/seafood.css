@@ -1,0 +1,211 @@
+*{
+	padding: 0;
+	margin:0;
+}
+body{
+	background: #f7f8f8;
+}
+#nav{
+	/*float: left;*/
+	list-style: none;
+	position: absolute;
+	top:0;
+	left: 294px;
+	width: 1020px;
+	border-bottom: 1px solid rgb(0,136,66);
+}
+#nav li{
+	float: left;
+	width: 110px;
+	height: 37px;
+}
+#nav li a{
+	text-decoration: none;
+	display: inline-block;
+	width: 110px;
+	height: 37px;
+}
+
+/*图片链接部分*/
+.imglink{
+	width: 100%;
+}
+.img_wrap{
+	width: 1200px;
+	margin:0 auto;
+	height: 490px;
+	margin-bottom:10px; 
+	position: absolute;
+	top:146px;
+	left: 114px;
+}
+.img_wrap .downn{
+	margin-top: 5px;
+}
+.img_wrap .downn img{
+	margin-right: 10px;
+}
+.img_wrap .downn .last{
+	margin-right: 0;
+}
+
+/*活鲜海产*/
+.list{
+	width: 100%;
+	margin-top:20px; 
+
+}
+.list_wrap{
+	width: 1200px;
+	margin:0 auto;
+	height: 35px;
+	margin-top: 45px;
+	margin-bottom: 20px;
+	border:1px solid #d5d5d5;
+	font:normal normal 13px/35px "微软雅黑";
+}
+.left_list{
+	float: left;
+	width: 98px;
+	background: #909090;
+	height: 35px;
+	text-align: center;
+	color: #d5d5d5;
+}
+.right_list{
+	list-style: none;
+}
+.right_list li{
+	float: left;border-right:1px solid #d5d5d5;
+	
+}
+.right_list li a{
+	text-decoration: none;
+	margin-left: 20px;
+	margin-right: 20px;
+	
+}
+
+/*分类参照*/
+.refer{
+	width: 100%;
+}
+.refer_wrap{
+	width: 1200px;
+	height: 40px;
+	background: #eaeaea;
+	margin:0 auto;
+	position: relative;
+}
+.refer_wrap .li{
+	background: #fff;
+}
+.refer_wrap ul{
+	height: 28px;
+	font:normal normal 14px/30px "微软雅黑";
+	border:1px solid #d5d5d5;
+	border-right: 0;
+	position: absolute;
+	top:5px;
+	left: 10px;
+
+}
+.refer_wrap ul li{
+	list-style: none;
+	float: left;
+	border-right: 1px solid #d5d5d5;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+/*详细列表*/
+.bigwrap{
+	width: 100%;
+}
+.bigwrap #list{
+	width: 1200px;
+	margin-left:112px;
+	margin-top: 20px;
+	overflow: hidden;
+	zoom:1;
+}
+.listyle{
+	width: 290px;
+	height: 358px;
+	background: #fff;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	list-style: none;
+	float: left;
+	position: relative;
+}
+.listyle img{
+	width: 290px;
+	height: 290px;
+}
+.listyle button{
+	position: absolute;
+	top:255px;
+	left: 55px;
+	width: 180px;
+	height: 25px;
+	border-radius: 10px;
+	background: rgb(0,136,66);
+	display: none;
+	border: 0;
+	color: #fff;
+}
+.listyle:hover button{
+	display: block;
+}
+.listyle p{
+	color: #444;
+	font: normal normal 13px "微软雅黑";
+	margin-bottom: 10px;
+	text-align: left;
+	padding-left: 20px;
+}
+.listyle .b{
+	font:900 normal 18px "微软雅黑";
+	color:red;
+	padding-left: 20px;
+}
+.listyle span{
+	font-size: 12px;
+	margin-left: 10px;
+}
+.listyle span b{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: #f00;
+	text-align: center;
+	line-height: 20px;
+	color: #fff;
+	font-size: 14px;
+	margin-right: 5px;
+
+}
+#pagination{
+	list-style: none;
+}
+#pagination{
+	width: 280px;
+	height: 25px;
+	/*background: pink;*/
+	margin:0 auto;
+	margin-top: 30px;
+}
+#pagination li{
+	float: left;
+	/*width: 25px;*/
+	height: 25px;
+	margin-left: 15px;
+	/*background: #ff0;*/
+	text-align: center;
+	line-height: 25px;
+	cursor: pointer;
+}
+#pagination li:hover{
+	color: red;
+}

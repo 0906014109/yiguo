@@ -1,0 +1,272 @@
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	background:#f7f8f8;
+}
+.lob{
+	width: 100%;
+}
+.lob_header{
+	width: 1200px;
+	margin:0 auto;
+	margin-left: 114px;
+	margin-top: -462px;
+	height: 600px;
+}
+.lob_header .lob_up{
+	position: relative;
+	height: 500px;
+}
+.lob_header .lob_up img{
+	position:absolute;
+	top:0;
+	left: 0;
+	width: 500px;
+}
+.lob_down{
+	position: relative;
+	top:5px;
+}
+.lob_down img{
+	width: 83px;
+	height: 83px;
+	border:1px solid #d5d5d5;
+	margin-right:5px; 
+}
+.lob_content{
+	float: right;
+	background: #d5d5d5;
+	width: 680px;
+	height: 600px;
+	margin-left: 114px;
+	margin-top: -590px;
+}
+
+/*详情介绍部分*/
+.loster_content{
+	margin-top: 20px;
+	margin-left: 114px;
+	overflow: hidden;
+	zoom:1;
+}
+.possiblelike{
+	width: 253px;
+	height: 939px;
+	border:1px solid #d5d5d5;
+	float: left;
+	background: #fff;
+}
+.possiblelike .hd{
+	background: rgb(0,136,66);
+	width: 253px;
+	height: 30px;
+	color: #fff;
+	text-align: center;
+	font: 14px/30px "微软雅黑"; 
+}
+.possiblelike ul{
+	list-style: none;
+	width: 233px;
+	height: 909px;
+	margin:0 auto;
+}
+.possiblelike ul li{
+	list-style: none;
+	width: 233px;
+	height: 90px;
+	border-bottom: 1px dashed #d5d5d5;
+}
+.possiblelike ul li .div{
+    font-size: 13px;
+    padding-top:11px;
+    padding-bottom:11px;
+    width: 233px;
+    height: 70px;
+}
+.possiblelike ul li img{
+	width:66px;
+	height:66px;
+	border:1px solid #d5d5d5;
+	float:left;
+}
+.possiblelike ul li .div div{
+	float: left;
+	width: 153px;
+	margin-left: 10px;
+	/*margin-right:3px;*/
+	margin-top:5px; 
+	position: relative; 
+}
+.possiblelike .div div span{
+	display: inline-block;
+	margin-bottom: 10px;
+	color: #777;
+}
+.possiblelike .div div button{
+	background: rgb(0,136,66);
+	border-radius: 5px;
+	border: 0; 
+	margin-right:10px; 
+	color: #fff;
+	width: 80px;
+	font-size: 12px;
+	position: absolute;
+	right: 0;
+	height: 18px;
+	display: none;
+}
+.possiblelike .div b{
+	color: #f00;
+}
+.lob_right{
+	width: 930px;
+	margin-left: 13px;
+	float: left;
+}
+.lob_right .hot{
+	width: 928px;
+	border:1px solid #d5d5d5;
+	height: 276px;
+	margin-bottom: 13px;
+	background: #fff;
+}
+.hot p{
+	height: 35px;
+	margin-left: 30px;
+	color: #008842;
+	line-height: 35px;
+	font-weight: bolder;
+}
+.hot ul li{
+	float: left;
+	width: 135px;
+	/*background: #f00;*/
+	height: 250px;
+	margin-left:35px; 
+	list-style: none;
+	text-align: center;
+	position: relative;
+}
+.hot ul li img{
+	width: 135px;
+	height: 135px;
+}
+.hot ul li span{
+	font:12px "微软雅黑";
+	color: #777;
+	
+}
+.hot ul li b{
+	font:12px "微软雅黑";
+	color: #f00;
+	position: absolute;
+	left: 32px;
+	bottom: 40px;
+}
+.hot ul li i{
+	font:12px "微软雅黑";
+	color: #aaa;
+	margin-bottom: 10px;
+	text-decoration: line-through;
+	/*position: absolute;
+	left: 25px;
+	bottom: 10px;*/
+}
+.introduce{
+	width: 928px;
+	border:1px solid #d5d5d5;
+	min-height:400px;
+	height: auto; 
+	background: #fff;
+	padding-bottom: 20px;
+}
+.introduce .ul{
+	list-style: none;
+	margin-bottom: 65px;
+}
+.introduce .ul li{
+	width: 130px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	font: 14px "微软雅黑";
+	float: left;
+	border: 1px solid #d5d5d5;
+	margin-top: -1px;
+	border-right:0; 
+}
+.introduce .ul .show{
+	border:0; 
+	background: url("../images/icon11.png") no-repeat 0 0;
+}
+.introduce .ul li:last-child{
+	width: 666px;
+}
+.introduce table{
+	margin-left: 20px;
+}
+.introduce table .td{
+	background: #ebf8f2;
+}
+.imgcontent{
+	margin-left: 22px;
+	margin-top: 20px;
+}
+.imgcontent img{
+	display: block;
+	width: 880px;
+}
+#evaluate{
+	margin-top: 10px;
+}
+#evaluate .eval{
+	width: 928px;
+	border-bottom: 1px solid #d5d5d5;
+	list-style: none;
+	height: 130px;
+}
+#evaluate .eval li{
+	padding-right: 20px;
+	padding-left: 20px;
+	border-right: 1px dashed #d5d5d5;
+	height:100px;
+	background: #ff0;
+	float: left;
+}
+
+.lob_up #wrap{
+	width: 500px;
+	height: 100%;
+	position: absolute;
+	z-index: 999;
+}
+
+.lob_up .grayBox{
+	/*display: none;*/
+	width: 200px;
+	height: 200px;
+	background-image: url("http://img13.yiguoimg.com/d/items/2018/180427/9288722248606875_500.jpg");
+	background-size:500px 500px;
+	background-position: 0 0;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	position: absolute;
+	left: 0;
+	top: 0;
+}	
+
+.big{
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	left: 613px;
+	top: 145px;
+	border:1px solid #f10;
+	/*display: none;*/
+	overflow: hidden;
+}
+.big img{
+	position: absolute;
+
+}

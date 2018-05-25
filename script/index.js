@@ -1,4 +1,8 @@
 //搜索栏吸顶效果、购物车弹出效果
+$(".buycar").on("click",function(){
+    // $(this).css("cursor","hand");
+    location.href="../yiguo/html/buycar.html";
+});
 var $aDivCar=$("<div></div>");
 $aDivCar.css({
         "width":"400px",
@@ -18,7 +22,6 @@ var oHeader=document.querySelector('.header');
 var oHeight=oLogin.offsetHeight + oHeader.offsetHeight;
 $(document).on("scroll",function(){
     var oTop=document.body.scrollTop || document.documentElement.scrollTop;
-    console.log(oTop);
     if(oTop >= oHeight){
         $aDiv.css({
             "position":"fixed",
@@ -38,6 +41,12 @@ $(document).on("scroll",function(){
             $aDivCar.show()
             .text("购物车中还没有商品，赶紧选购吧！");
         })
+    }
+    /*侧边导航栏*/
+    if(oTop < 800 && oTop >= 0 || oTop >= 5000){
+        $(".mao").css("display","none");
+    }else{
+        $(".mao").css("display","block");
     }
 })
 $(document).on("mouseout",function(){
@@ -66,12 +75,11 @@ var $banner_img=$(".banner img")
 $banner_a.each(function(index,item){
     $(item).on("mouseover",function(){ 
         //参数里的变量要想用jQuery方法，也必须转成jQuery对象
-        // clearInterval($imgTimer);
         for(var i = 0; i < $banner_a.length; i++){
-            $banner_a.eq(i).attr("background","#fff");//jQuery没有$a[i]这样的写法
+            $banner_a.eq(i).css("background","#fff");//jQuery没有$a[i]这样的写法
             $banner_img.eq(i).hide();
         }
-        $banner_a.eq(index).attr("background","green");
+        $banner_a.eq(index).css("background","rgb(0,136,66)");
         $banner_img.eq(index).show();
     })
 });
@@ -87,10 +95,10 @@ $(".banner").on("mouseout",function(){
                     $show=$index;
                 }
                 for(var i = 0; i < $banner_a.length; i++){
-                    $banner_a.eq(i).attr("background","#fff");//jQuery没有$a[i]这样的写法
+                    $banner_a.eq(i).css("background","#fff");//jQuery没有$a[i]这样的写法
                     $banner_img.eq(i).hide();
                 }
-                $banner_a.eq($show).attr("background","#0f0");
+                $banner_a.eq($show).css("background","rgb(0,136,66)");
                 $banner_img.eq($show).show();
             },1000)
     $("#prev").hide();
@@ -107,8 +115,8 @@ $("#prev").on("mouseover",function(){
         "opacity":"1",
         "filter":"alpha(opacity=100)"
     });
+    var $show,$index=0;
     $("#prev").on("click",function(){
-        var $show,$index=0;
         if($index==0){
             $index=$banner_a.length-1;
             $show=$index;
@@ -117,10 +125,11 @@ $("#prev").on("mouseover",function(){
             $show=$index;
         }
         for(var i = 0; i < $banner_a.length; i++){
-            $banner_a.eq(i).attr("background","#fff");//jQuery没有$a[i]这样的写法
+            $banner_a.eq(i).css("background","#fff");//jQuery没有$a[i]这样的写法
             $banner_img.eq(i).hide();
         }
-        $banner_a.eq($show).attr("background","#0f0");
+        console.log($show);
+        $banner_a.eq($show).css("background","rgb(0,136,66)");
         $banner_img.eq($show).show();
     });
 });
@@ -135,8 +144,9 @@ $("#next").on("mouseover",function(){
         "opacity":"1",
         "filter":"alpha(opacity=100)"
     });
-    $("#next").on("click",function(){
         var $show,$index=0;
+
+    $("#next").on("click",function(){
         if($index==$banner_a.length-1){
             $index=0;
             $show=$index;
@@ -145,10 +155,10 @@ $("#next").on("mouseover",function(){
             $show=$index;
         }
         for(var i = 0; i < $banner_a.length; i++){
-            $banner_a.eq(i).attr("background","#fff");//jQuery没有$a[i]这样的写法
+            $banner_a.eq(i).css("background","#fff");//jQuery没有$a[i]这样的写法
             $banner_img.eq(i).hide();
         }
-        $banner_a.eq($show).attr("background","#0f0");
+        $banner_a.eq($show).css("background","rgb(0,136,66)");
         $banner_img.eq($show).show();
     });
 });
@@ -164,7 +174,6 @@ $("#next").on("mouseout",function(){
 var aLi=document.querySelectorAll("li");
 aLi=[].slice.call(false,aLi);
 var secHtml="";
-// `<p><a href="">${}</a></p>`;
 var aSpan=$(".banner ul li span:odd");//所有奇数个元素，第一项从0开始计数
 var aLi=$(".banner ul li");
 aLi.each(function(index,item){
@@ -175,11 +184,9 @@ aLi.each(function(index,item){
             var oName=$(aSpan).eq(index).attr("name-id");
             var oList=json[oName].list;
             var oImg=json[oName].listImg;
-            console.log(json[oName].listImg);
             for(var j=0;j<oList.length;j++){
                 secHtml+=`<a href="#">${oList[j]}</a>`;
             }
-            console.log(secHtml);
             secHtml+=`</p><img src=${oImg}>`; 
             $(".banner .secnav").show().html(secHtml);
             $(".banner .secnav img").css({
@@ -202,33 +209,46 @@ aLi.each(function(index,item){
                 "line-height":"30px"
             });
     });
-    // $(".banner .secnav").on("mouseover",function(){
-
-    // })
 })
+/*二级导航移入移出效果*/
 
-$(".banner ul").on("mouseout","li",function(){
+var timer = null;
+var secFlag = false;
+$(".banner ul").on("mouseleave",function(){
     $(".banner .secnav").on("mouseenter",function(){
         $(".banner .secnav").show();
     })
     $(".banner .secnav").on("mouseleave",function(){
         $(".banner .secnav").hide();
     })
+    $(".banner .secnav").hide();
+    // console.log(1);
+    // clearTimeout(timer);
+    // setTimeout(function(){
+    //     if(!secFlag){
+    //         $(".secnav").hide();
+    //     }
+    // },500)
+    
 });
 
+// $(".secnav").on("mouseenter",function(){
+//    secFlag = true;
+// })
+
+// $(".secnav").on("mouseleave",function(){
+//    secFlag = false;
+//    $(".secnav").hide();
+// })
+/*banner部分导航栏的隐藏显示*/
+$(".select").on("click",function(){
+    $(".select + ul").stop().toggle();
+    $(".banner .secnav").hide();
+})
 
 
 
 
-//内容索引部分 
-var $ul=$(".content_index ul");
-var $li=$(".content_index ul li");
-var $index_img=$(".content_index ul li img");
-var $p=$(".content_index ul li p");
-var $index_h2=$(".content_index ul li p h2");
-var $index_h6=$(".content_index ul li p h6");
-$li.eq(3).css({
-    "margin-right":"0",
-});           
+
             
             

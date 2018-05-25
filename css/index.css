@@ -23,6 +23,7 @@ a{
 	position: absolute;
 	top:20%;
 	left:8%;
+	cursor: pointer;
 }
 .header .search{
     position: absolute;
@@ -74,7 +75,16 @@ a{
 	height: 19px;
 	margin-top:10px;
 	margin-right:10px; 
-	margin-left:30%; 
+	margin-left:15%; 
+	position: relative;
+}
+.buycar_bg b{
+	font-size: 13px;
+	text-align:center;
+	line-height:10px;
+	position: absolute;
+	top:-2px;
+	left: 8px;
 }
 .fixtop{
 	height: 46px;
@@ -86,7 +96,6 @@ a{
 	height: 36px;
 	width: 104px;
 	top:8%;
-
 }
 .resizesearch{
 	top: 8%;
@@ -105,9 +114,7 @@ a{
 /*轮播图*/
 .banner{
     position:relative;
-    /*width: 100%;*/
     height: 500px;
-    background: #f00;
     overflow: hidden;
 }
 .banner img{
@@ -175,6 +182,11 @@ a{
 	position: relative;
 	z-index: 3;
 }
+.banner .select span:nth-child(2){
+	background: url("../images/login_icon.png") no-repeat -25px 0;
+	width: 8px;
+	height: 4px;
+}
 .banner ul{
 	position: absolute;
 	top:38px;
@@ -241,12 +253,10 @@ a{
 	width: 180px;
 	/*background: #fff;*/
 	border:1px solid #bbb;
-	z-index: 3;
+	z-index: 1000;
 	background: rgba(244,251,253,0.8);
 	padding:30px 50px 100px 20px;
 	display: none;
-	/*opacity: 0.8;
-	filter:alpha(opacity=80);*/
 }
 /*导航*/
 
@@ -288,13 +298,7 @@ a{
 	font-style: normal;
 	font-size: 14px;
 }
-/*进口水果部分*/
-.foreign_fruit{
-	width: 100%;
-	height: 463px;
-	margin-top:20px; 
-	margin-bottom: 20px;
-}
+/*模块内容渲染部分*/
 .wrap{
 	margin-left: 8%;
 	position: relative;
@@ -329,18 +333,18 @@ a{
 .wrap #right_list{
 	text-align: right;
 	float: right;
-	margin-right: 8%;
+	margin-right: 8.5%;
 	line-height: 32px;
 }
 .wrap #right_list a{
 	display: inline-block;
-	/*background: #ff0;*/
 	border-right: 1px solid #787878;
-	width: 80px;
 	text-align: center;
 	font-size: 14px;
 	line-height: 14px;
 	color: #787878;
+	padding-left: 10px;
+	padding-right: 10px;
 
 }
 .wrap #right_list a:nth-child(3){
@@ -352,7 +356,6 @@ a{
 }
 .right{
 	float: left;
-	margin-top: -3px;
 }
 .right img{
 	border: 1px solid #d5d5d5;
@@ -367,10 +370,135 @@ a{
 .down{
 	margin-top:-5px; 
 }
-/*.right .up{
+
+.middle{
 	float: left;
+	width: 676px;
+	height: 463px;
+	/*border: 1px solid #d5d5d5;*/
 }
-*/
+.middle img,{
+	border: 1px solid #d5d5d5;
+	/*margin-left:-1px; */
+}
+.right img{
+	border: 1px solid #d5d5d5;
+	margin-left:-1px; 
+}
+.middle .t{
+	overflow: hidden;
+	zoom:1;
+}
+.middle .l{
+	float: left;
+	width: 232px;
+}
+.middle .r{
+	float: left;
+	width: 444px;
+}
+.middle .rr img:nth-child(2){
+	margin-top:-5px;
+}
+.middle .r img{
+	float: left;
+	height: 191px;
+	width: 220px;
+}
+.middle .r img:nth-child(3),.middle .r img:nth-child(4){
+	margin-top: -1px;
+}
+.middle .d{
+	border:1px solid #d5d5d5;
+	height: 77px;
+	margin-bottom: 0;
+	margin-top:-5px; 
+	background: #fff;
+}
+.d img{
+	border: 0;
+	margin-left:20px;
+	margin-top:12px;  
+}
+.right{
+	margin-left:-2px; 
+}
+
+
+/*锚点效果*/
+.mao{
+	list-style: none;
+	position: fixed;
+	top:210px;
+	left: 30px;
+	z-index: 1000;
+	display: none;
+}
+.mao li{
+	width: 40px;
+	height: 40px;
+	border-bottom: 1px solid rgb(0,136,66);
+	position: relative;
+}
+.mao li a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+}
+.mao li a b{
+	display: inline-block;
+	height: 24px;
+	width: 20px;
+	margin-top: 10px;
+	margin-left:10px; 
+}
+.mao li a #b1{
+	background: url("../images/index-icon.png") no-repeat -3px -3px;
+}
+.mao li a #b2{
+	background: url("../images/index-icon.png") no-repeat -27px -3px;
+}
+.mao li a #b3{
+	background: url("../images/index-icon.png") no-repeat -99px -5px;
+}
+.mao li a #b4{
+	background: url("../images/index-icon.png") no-repeat -51px -3px;
+}
+.mao li a #b5{
+	background: url("../images/index-icon.png") no-repeat -75px -3px;
+}
+.mao li a #b6{
+	background: url("../images/index-icon.png") no-repeat -193px -3px;
+}
+.mao li a #b7{
+	background: url("../images/index-icon.png") no-repeat -121px -3px;
+}
+.mao li a #b8{
+	background: url("../images/index-icon.png") no-repeat -217px 0;
+}
+.mao li a #b9{
+	background: url("../images/index-icon.png") no-repeat -169px -3px;
+}
+.mao li:hover a{
+	background: rgb(0,136,66);
+}
+.mao li:hover b{
+	display: none;
+	padding-bottom:5px;
+	border-bottom:  
+}
+.mao li em{
+	display: none;
+}
+.mao li:hover em{
+	color: #fff;
+	position: absolute;
+	left: 8px;
+	top: 5px;
+	display: block; 
+	font:normal normal 8px "微软雅黑";
+
+}
 /*网站服务特色*/
 .service{
 	background: rgb(224,224,224);
@@ -378,7 +506,6 @@ a{
 	width: 100%;
 	height: 72px;
 	padding-top: 30px;
-	/*background: blue;*/
 }
 .service ul{
 	height: 42px;

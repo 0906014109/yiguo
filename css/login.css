@@ -22,6 +22,7 @@ body{
 	position: absolute;
 	top:20%;
 	left:8%;
+	cursor: pointer;
 }
 .header b{
 	color: rgb(0,136,66);
@@ -45,7 +46,7 @@ body{
 	width:1200px;
 	margin-bottom: 20px;
 }
-#login img{
+#login .img{
 	float: left;
 }
 #login form{
@@ -70,18 +71,21 @@ form .index_register a{
 form input{
 	height: 36px;
 	width: 235px;
-	margin-top:20px;
+	/*margin-top:20px;*/
 	border:1px solid #c1c1c1; 
 }
 form #usr{
 	background: url("../images/user.png") no-repeat 0 -120px;
 	padding-left: 50px;
+	margin-top:20px; 
 }
 form #pwd,#code{
 	background: url("../images/user.png") no-repeat 0 -180px;
 	padding-left: 50px;
 }
-
+form input#code{
+	width: 140px;
+}
 form #self{
 	height: 15px;
 	width: 15px;
@@ -142,7 +146,20 @@ form .other{
 	height: 21px;
 	display: inline-block;
 }
+.usrerror,.pwderror,.codeerror{
+	width: 287px;
+	height: 20px;
+	/*background: #f00;*/
+	text-align: center;
+	font: 10px "微软雅黑";
+	line-height: 20px;
+}
+
+
 .footer{
 	border-top:1px solid rgb(224,224,224); 
 	padding-top: 70px;
+}
+#btn{
+	cursor: pointer;
 }
